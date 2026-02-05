@@ -1,0 +1,53 @@
+/* CSS MAP DEMO */
+/* Below is the CSS that lets us create the map and position points arbitrarily on it */
+
+/* Map is given a size. May be given a background-image instead of a background-color */
+/* Note that position is set to "relative" to allow us to position points on the map with position:absolute */
+.map {
+	/* The points will be positioned relative to the map */
+	position: relative;
+
+	width: 1000px;
+	height: 800px;
+	background-color: #30bf83;
+
+}
+
+/* Styling for all map points. Default size, color, and shape are set */
+/* Position is set to "absolute" so that we can position the points on the map */
+.point {
+	/* Lets us position the point */
+	position: absolute;
+	
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	background-color: #d64b62;	
+	transition: transform 200ms ease-in-out;
+}
+.point:hover {
+	transform: scale(120%);
+}
+
+/* Use IDs set in the HTML to individually position each point */
+/* Note that we use the calc() function to subtract half of the width and height of the point
+ * from the positioning */
+/* Any other point specific styling can also go here. For example, the point's color can be changed */
+#point-one {
+	background-color: #d64b62;
+	top: calc(45% - 15px);
+	left: calc(30% - 15px);
+}
+
+#point-two {
+	background-color: #58dcfc;
+	top: calc(60% - 15px);
+	left: calc(75% - 15px);
+}
+
+#point-three {
+	background-color: #fcb358;
+	top: calc(20% - 15px);
+	left: calc(54% - 15px);
+}
+

@@ -1,0 +1,41 @@
+/* This is additional styling for the page */
+/* It isn't related directly to the demo */
+/* So you can safely ignore it :) */
+
+
+@font-face {
+    font-family: 'HoneyPigeon';
+    src: url('HoneyPigeon.ttf');
+}
+
+* {
+	margin: 0;		
+	box-sizing: border-box;
+	font-family: HoneyPigeon;
+}
+
+.title {
+	font-size: 4rem;
+	color: #232830;
+}
+
+.wrapper {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	justify-content: center;
+	align-items: center;
+	background-color: #dddddd;
+}
+
+.map {
+	outline: solid 5px #232830;
+	outline-offset: 10px;
+	border-radius: 1px;	
+}
+
+
+
+
